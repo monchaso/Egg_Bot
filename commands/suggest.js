@@ -5,7 +5,7 @@ module.exports = {
 	guildOnly: true,
 	args: true,
 	execute(message,args) {
-		if (!message.member.roles.has("544308625741447168")) {
+		if (!message.member.roles.has("544308625741447168") && !message.member.roles.has("613005591333437464")) {
 			return message.reply("you're not allowed to use that command yet!")
 		}
 		const data = [];
